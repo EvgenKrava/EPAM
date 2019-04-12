@@ -1,0 +1,5 @@
+public class Task_1{
+	public static void main(String[] args){
+		System.out.println("\ud834\udd1e");
+	}
+}

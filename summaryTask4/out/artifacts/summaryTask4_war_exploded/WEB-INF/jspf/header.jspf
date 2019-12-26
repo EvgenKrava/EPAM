@@ -1,0 +1,19 @@
+<%@ page import="ua.nure.kravchenko.summaryTask4.db.Role" %>
+<%@include file="/WEB-INF/jspf/head.jspf"%>
+<div class="header">
+    <a href="${pageContext.request.contextPath}" class="logo">Provider</a>
+    <div class="header-right">
+        <%--@elvariable id="user" type="ua.nure.kravchenko.summaryTask4.db.entity.User"--%>
+        <c:if test="${user ne null}">
+            <a class="active" href="${pageContext.request.contextPath}"><fmt:message key="home"/></a>
+            <c:if test="${user.role == Role.ADMIN}">
+                <a href="controller?command=users"><fmt:message key="users"/></a>
+            </c:if>
+            <a href="controller?command=tariffs"><fmt:message key="services"/></a>
+            <a href="controller?command=logout"><fmt:message key="logout"/></a>
+
+        </c:if>
+    </div>
+</div>
+
+

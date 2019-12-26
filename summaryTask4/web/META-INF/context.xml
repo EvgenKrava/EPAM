@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context>
+    <Resource
+            name="jdbc/pool"
+            auth="Container"
+            type="javax.sql.DataSource"
+            username="evgen"
+            password="evgen2000"
+            driverClassName="com.mysql.cj.jdbc.Driver"
+            validationQuery="select 1"
+            maxActive="8"
+            maxIdle="4"
+            url="jdbc:mysql://localhost:3306/st4db?useUnicode=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;characterEncoding=utf8"/>
+</Context>
